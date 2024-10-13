@@ -9,12 +9,9 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md",
-        "test.ts"
+        "README.md"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
         "target": "7.0.51",
         "targetId": "microbit"
