@@ -47,7 +47,7 @@ namespace transitions {
         })
     }
 
-    //% block="$easing from $from to $to in $time seconds $value $transition"
+    //% block="new $transition of $value from $from to $to over $time ms ($easing)"
     //% advanced=true
     //% handlerStatement=1
     //% expandableArgumentMode="enabled"
