@@ -4,12 +4,16 @@ namespace easing {
 
     export enum EasingFunctions {
         //% block="Linear"
+        //% jres=easing.linear
         Linear,
         //% block="Ease in"
+        //% jres=easing.ease_in
         EaseIn,
         //% block="Ease out"
+        //% jres=easing.ease_out
         EaseOut,
         //% block="Ease in out"
+        //% jres=easing.ease_in_out
         EaseInOut
     }
 

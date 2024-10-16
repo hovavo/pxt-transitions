@@ -38,8 +38,8 @@ namespace transitions {
     //% to.defl=1 
     //% time.shadow="timePicker"
     //% time.min=0 time.defl=1000
-    //% easing.fieldEditor="gridpicker"
-    //% easing.fieldOptions.columns=3
+    //% easing.fieldEditor="gestures"
+    //% easing.fieldOptions.columns=4
     //% easing.defl=easing.EasingFunctions.EaseInOut
     export function fromTo(from: number, to: number, time: number, easing: easing.EasingFunctions, handler: (value: number) => void) {
         new Transition({
@@ -53,7 +53,7 @@ namespace transitions {
     //% expandableArgumentMode="enabled"
     //% draggableParameters="reporter"
     //% to.defl=1 time.min=0 time.defl=1
-    //% easing.fieldEditor="gridpicker"
+    //% easing.fieldEditor="gestures"
     //% easing.fieldOptions.width=220
     //% easing.fieldOptions.columns=3
     export function fromToWithRef(from: number, to: number, time: number, easing: easing.EasingFunctions, handler: (value: number, transition: Transition) => void) {
