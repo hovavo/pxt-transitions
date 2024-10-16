@@ -1,5 +1,5 @@
 {
-    "name": "SmoothBit - Copy",
+    "name": "SmoothBit",
     "version": "0.1.1",
     "description": "Data smoothing and animation for micro:bit",
     "dependencies": {
