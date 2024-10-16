@@ -8,11 +8,10 @@
         "microphone": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
-        "README.md",
+        "transitions.ts",
         "easing.ts",
-        "easing.jres"
+        "easing.jres",
+        "README.md"
     ],
     "testFiles": [],
     "targetVersions": {
