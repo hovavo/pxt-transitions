@@ -11,7 +11,8 @@
         "transitions.ts",
         "easing.ts",
         "easing.jres",
-        "README.md"
+        "README.md",
+        "smoothing.ts"
     ],
     "testFiles": [],
     "targetVersions": {
