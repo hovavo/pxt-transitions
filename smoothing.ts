@@ -1,6 +1,7 @@
 namespace smoothing {
 
-    //% block="create smoothed variable named $value || with $time ms "
+    //% block="smoothed variable = $value || with $time ms"
+    //% weight=100
     //% blockSetVariable=smoothed
     //% time.shadow="timePicker"
     //% time.min=0 time.defl=300
@@ -22,7 +23,8 @@ namespace smoothing {
             this._currentValue = value;
         }
 
-        //% block="smooth $this to $value"
+        //% block="set $this to $value"
+        //% weight=90
         //% this.defl=smoothed
         //% this.shadow=variables_get
         transitionTo(value: number) {
@@ -42,6 +44,14 @@ namespace smoothing {
             })
         }
 
+        //% block="change $this by $value"
+        //% weight=80
+        //% this.defl=smoothed
+        //% this.shadow=variables_get
+        transitionBy(value: number) {
+            this.transitionTo(this._target + value);
+        }
+
         onUpdate(value: number) {
             this._currentValue = value;
         }
@@ -53,20 +63,21 @@ namespace smoothing {
         set target(value:number) {
             this._target = value;
             if (this._transition && this._transition.running) {
-                console.log("kill");
                 this._transition.stop();
                 this._transition = null;
             }
         }
 
         //% block="value of $this"
+        //% weight=50
         //% this.defl=smoothed
         //% this.shadow=variables_get
         get value() {
             return this._currentValue;
         }
 
-        //% block="jump $this to $value"
+        //% block="jump set $this to $value"
+        //% weight=70
         //% this.defl=smoothed
         //% this.shadow=variables_get
         setValue(value: number) {
